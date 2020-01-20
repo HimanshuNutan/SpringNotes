@@ -1,0 +1,30 @@
+Micro Services
+
+split the application into individual small pieces.
+synchronous communication when you wait for the response
+asynchronous when system doesnt wait for request
+
+spring boot main benefit - developer can focus on application logic without worrying for configuration
+
+main features = 
+1 started dependencies
+2 automatic configuration
+3 CLI - command line interface
+4 The Actuator
+
+1
+spring-boot-started-web - contains all dependencies for development as well as tomcat
+spring-boot-starter-test - to generate test cases for unit testing
+
+2
+it automatically scans all the packages and properties files
+automatically scan the classpath, dependencies
+
+3 
+using command line we can give inputs to the project
+
+4
+to monitor the performance
+
+swagger
+h2 database

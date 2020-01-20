@@ -1,0 +1,28 @@
+Spring MVC
+
+Front Controller Design Pattern - same controller for all users to take requests and give responses
+
+MVC Design Pattern - 
+
+Spring's Dispatched Servlet
+
+Handler Mapping
+Controller
+View Resolver
+View
+
+
+
+@Controller
+@RestController
+@RequestMapping
+
+
+
+create dynamic web project
+add pom.xml
+convert to maven project
+Create IndexController
+Create ApplicationInitializer(Handler Mapping)
+Create ViewResolver
+create index.jsp

@@ -1,0 +1,6 @@
+Java Based Configuration
+
+@Configuration - class level
+@Bean - method level
+
+@Primary - can be used instead of @Qualifier to distinguish between same type of beans

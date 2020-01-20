@@ -1,0 +1,27 @@
+SPRING AOP
+
+mainly used for middleware services
+-- transaction management
+-- security services
+-- logging services
+-- JDBC connection pooling
+
+Terminologies
+-- aspect - specification containing rules and guidelines to implement the middleware services
+-- advice - This is the real middleware services
+
+Types of advice  - Before Advice
+                 - After Advice 
+                 - After returning advice
+                 - After throwing advice
+                 - Around Advice (both before and after)
+
+-- joint point - possible positions in our business logic where advice can be applied
+-- pointcut - xml or annotation based entry that links advices with jointpoints
+-- advisor - advice and pointcut together are called advisor
+-- Wiring - configuring  bean properties for dependency injection
+-- Weaving - applying middleware services on spring bean class is called weaving
+-- Target Bean/ Target Object - spring bean class which we are planning to apply middleware services
+-- Proxy Bean/ Proxy Object - spring bean class on which middleware services are already applied 
+
+<aop:aspectj-autoproxy> - to enable middleware services

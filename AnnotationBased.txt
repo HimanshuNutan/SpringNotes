@@ -1,0 +1,89 @@
+AnnotationConfigApplicationContext context  = new Annotation....
+context.scan("com.springproject");
+
+context.refresh();
+
+Employee emp = context.getBean("emp");
+
+to create the bean there are 3 annotations
+
+@Component("beanid")
+makes the java class as spring bean
+auto detectable for dependency injection
+used for application layer
+
+
+@Service("beanid")
+used for business layer
+works similar to component
+
+@Repository("beanid")
+used for persistent layer
+works similar to component
+
+
+to perform dependency injection 
+no need to write setter methods or constructors for dependency injection
+
+
+@Resource - part of java package - inject values to reference type objects
+@Autowired - dependency injection - part of spring package
+
+
+@Inject- part of java package - to configure explicit dependency - 
+in pom.xml need to add javax.inject dependency
+can or cannot give bean id
+
+
+in real time autowired is used most of the times because part of spring package
+
+
+@PostConstruct - if we want to do some clean up before creating the bean
+to configure custom init method
+
+@PostConstruct
+public void init() // can use any functionname
+{
+System.out.println("POST construct");
+
+
+@PreDestroy - will execute before destroying the bean
+ similar to finalize method
+
+@PreDestroy
+public void destroy()
+{}
+}
+
+
+@Scope - to define the scope of the bean
+
+@Scope("singleton")
+@Component("employee")
+public class Employee{....}
+
+@ComponentScan("com.packagename") - annotation for context.scan(packagename) - write above the main() method
+
+@Required
+-applies to bean property setter methods
+- supports / helps to do eager loading the injected bean will be checked during creation of the calling bean itself
+ if you dont use that lazy loading - injected bean will be checked when some method is called using it. 
+or we can do this --- @Autowired(required = true)
+
+@Qualifier - can use only with @Autowired
+to avoid ambiguity
+
+
+in real time these annotations are mostly used
+component service repository
+autowired
+postconstruct 
+predestroy
+
+
+
+to pick data from properties file
+on top of POJO class
+@PropertySource("classpath:mail.properties")
+
+@Value("${varname}")

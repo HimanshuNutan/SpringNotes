@@ -1,0 +1,6 @@
+Spring JDBC
+
+add dependency in pom.xml
+groupid = org.springframework
+artifact id spring-jdbc
+4.02-release

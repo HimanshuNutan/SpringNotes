@@ -1,0 +1,9 @@
+combination of both xml and annotation based
+
+<context:annotation-config/>
+<context:component-scan base-package="com.packagename"/>
+
+Telling the container in XML file that there are some annotations as well.
+
+
+

@@ -1,0 +1,11 @@
+@SpringBootApplication
+
+combination of 
+@EnableAutoConfiguration
+
+
+controller
+dao
+domain
+service
+util- create db connection	

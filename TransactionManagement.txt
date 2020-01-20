@@ -1,0 +1,14 @@
+-> Declarative Transaction Management
+-> Programatic TM
+    -> Transaction Template 
+    -> Platform Transaction Manager
+
+
+Transaction Propagation
+ ----> REQUIRED Behavior - all steps use same transaction
+ ----> REQUIRES_NEW  - all steps use different transactions
+ ----> NESTED - both are using same transaction but doesn't rollback if any steps fails but saves SavePoints(Versions)
+ ----> MANDATORY - same transaction but for every step the transaction should be open if not it will throw exceptions
+ ----> NEVER - it will create new transaction for everystep and close it after that if not closed properly it will throw exception
+ ----> NOT_SUPPORTED - not supporting any transaction propagation
+ ----> SUPPORTS - if an open transaction present then it will use same transaction for next step otherwise create a new transaction
